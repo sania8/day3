@@ -1,0 +1,86 @@
+
+.body{
+    align-items : center;
+    justify-content: center;
+    display : flex;
+    background: #B2FEFA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0ED2F7, #B2FEFA); 
+    
+}
+.container{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 14px 20px ;
+    width: 400px;
+    max-width: 100%;
+    margin : 10px;
+    padding : 10px;
+    border-radius : 10px;
+    opacity : 1;
+}
+.heading{
+    background-color : rgb(238, 236, 236);
+    text-align:center;
+    padding : 10px 30px;
+    border-radius : 5px;
+    box-shadow : 0 5px 10px;
+}
+.form{
+    padding : 30px 40px;
+
+}
+.control-form{
+     padding-bottom: 20px 30px;
+     margin-bottom: 1px;
+     position : relative ; 
+     
+}
+
+.control-form label {
+    display : block;
+    margin-bottom : 15px;
+    box-shadow : 0 5px 10px;
+}
+.control-form input {
+    width : 400px;
+    display : block;
+    
+    box-sizing: border-box;
+    padding : 20px;
+    
+    margin-bottom : 10px;
+    box-shadow : 0 5px 10px;
+    border: none;
+    border-bottom: 1px solid black; /* set a 1px solid black bottom border */
+    
+}
+input:focus::placeholder {
+    opacity: 1;
+    transform: translate(0, -100%);
+    transition: opacity 0.5s, transform 0.4s;
+    color : black;
+  }
+  
+  
+  input:not(:focus)::placeholder {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+.submit-btn {
+  font-size: 20px;
+  padding:10px 26px;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  box-shadow : 0 5px 10px;
+  border-radius: 5px;
+  color: black;
+  border : 2px solid #0ED2F7;
+  background-color : #0ED2F7;
+  justify-content: center;
+  
+}
+/*style the input fields such that the placeholders should be visible initially but when clicked on the input field it should bring that above the input field */
